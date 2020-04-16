@@ -3,8 +3,6 @@ Basic POC - Implementation of processor sending 'Events' to 'Azure Event Hub' wh
 
 # Technology Overview
 
-Following technologies are explored in this project:
-
 Azure Event Hub - Azure Event Hub is a Big Data streaming platform and event ingestion service, capable of receiving and processing millions of events per second. Event Hub can process and store events, data, or telemetry produced by distributed software and devices. 
 
 # Architecture
