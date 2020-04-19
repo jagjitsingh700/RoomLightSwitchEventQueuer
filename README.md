@@ -8,3 +8,5 @@ Azure Event Hub - Azure Event Hub is a Big Data streaming platform and event ing
 # Architecture
 
 The architecture is very simplified where the IoT device will send signal to this repository "RoomLightSwitchEventQueuer" which again will send the event to Azure Event Hub. "RoomLightSwitchEventQueuer" is just acting as a mediator. 
+
+In this case the IoT device sending signals are abstracted. The "Main" method in the console application is acting as IoT device sending signals when "Light" is switched on/off. In a real scenario, we could configure the IoT device to do that part. 
