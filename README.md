@@ -15,9 +15,10 @@ In this case the IoT device sending signals are abstracted. The "Main" method in
 
 1) You need to create an 'EventHub Container' and 'EventHub' in your 'Azure' subscription. Following Azure CLI commands will work for you:
 
+```
 az login
 az group create --name RoomLightService --location northeurope
 az eventhubs namespace create --name RoomLightContainer --resource-group RoomLightService -l northeurope
 az eventhubs eventhub create --name "RoomLightEventHub" --resource-group RoomLightService --namespace-name RoomLightContainer
-
+```
 2) Clone this project and put in your connection strings all the places in code where EventHubClient.CreateFromConnectionString(...) is called and when you run the program, some 'Events' should appear in your 'Event Hub'. 
